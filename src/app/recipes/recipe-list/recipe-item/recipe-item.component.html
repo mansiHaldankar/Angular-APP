@@ -1,0 +1,23 @@
+<!-- <a class="list-group-item clearfix" (click)='onRecipeSelected()' style="cursor: pointer;"> -->
+<!-- <a class="list-group-item clearfix" style="cursor: pointer;" [routerLink]="[index]" routerLinkActive='active'>
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{ recipe.name }}</h4>
+        <p class="list-group-item-text">{{ recipe.description }}</p>
+    </div>
+    <div class="pull-right">
+        <img [src]="recipe.imagePath" alt="" class="img-responsive" style="height: 70px;">
+    </div>
+</a> -->
+<a class="list-group-item " style="cursor: pointer;" [routerLink]="[index]" routerLinkActive='active'>
+    <div class="media">
+        <div class="media-body">
+            <div class="pull-left">
+                <h4 class="list-group-item-heading media-heading">{{ recipe.name }}</h4>
+                <p class="list-group-item-text">{{ recipe.description }}</p>
+            </div>
+        </div>
+        <div class="media-right">
+            <img [src]="recipe.imagePath" alt="" class="img-responsive" style="height: 70px;">
+        </div>
+    </div>
+</a>
